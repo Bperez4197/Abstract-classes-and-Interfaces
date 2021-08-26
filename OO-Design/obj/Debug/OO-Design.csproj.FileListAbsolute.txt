@@ -1,7 +1,0 @@
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\bin\Debug\OO-Design.exe.config
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\bin\Debug\OO-Design.exe
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\bin\Debug\OO-Design.pdb
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\obj\Debug\OO-Design.csprojAssemblyReference.cache
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\obj\Debug\OO-Design.csproj.CoreCompileInputs.cache
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\obj\Debug\OO-Design.exe
-C:\Users\bryce\OneDrive\C#\C# 2 class\OO-Design\OO-Design\obj\Debug\OO-Design.pdb

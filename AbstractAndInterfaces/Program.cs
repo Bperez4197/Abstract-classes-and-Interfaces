@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OO_Design
+namespace AbstractAndInterfaces
 {
     class Program
     {
@@ -16,42 +16,56 @@ namespace OO_Design
                 FirstName = "Bryce",
                 LastName = "Perez",
                 Address = "456 E. Charter rd",
-                AmountDue = 24.23,
-                InvoiceDate = DateTime.Now,
-                DueDate = DateTime.Now.AddMonths(1)
-
+                AmountDue = 24,
+                InvoiceDate = DateTime.Today
             };
 
             BusinessAccount myBiz = new BusinessAccount
             {
                 BusinessName = "Big Biz Studios",
                 BusinessAddress = "123 W. Charter rd",
-                AmountDue = 9857.87,
-                InvoiceDate = DateTime.Today,
-                DueDate = DateTime.Today.AddMonths(1)
+                AmountDue = 9857,
+                InvoiceDate = DateTime.Today
             };
 
-            Console.WriteLine($"Name:{myAccount.Name} AmountDue: ${myAccount.AmountDue} Due: {myAccount.DueDate.ToString("MM/dd/yyyy")}");
-            Console.WriteLine($"Name:{myBiz.Name} AmountDue: ${myBiz.AmountDue} Due: {myBiz.DueDate.ToString("MM/dd/yyyy")}");
+            Console.WriteLine($"Name:{myAccount.Name} AmountDue: ${myAccount.AmountDue} Due: {myAccount.DueDate()}");
+            Console.WriteLine($"Name:{myBiz.Name} AmountDue: ${myBiz.AmountDue} Due: {myBiz.DueDate()}");
             Console.ReadKey();
         }
 
-        class Account
+
+        interface IPayMyBill
+        {
+            void Pay();
+        }
+
+        abstract class Account : IPayMyBill
         {
             public virtual string Name { get; set; }
             public virtual string Address { get; set; }
-            public  double AmountDue { get; set; }
+            public decimal AmountDue { get; set; }
             public DateTime InvoiceDate { get; set; }
-            public DateTime DueDate { get; set; }
+
+            public abstract string DueDate();
+
+            public void Pay()
+            {
+                AmountDue = 0;
+            }
 
         }
 
         class PersonalAccount : Account
         {
-           public string FirstName { get; set; }
-           public string LastName { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
 
-            public override string Name { get => FirstName + " " + LastName;}
+            public override string Name { get => FirstName + " " + LastName; }
+
+            public override string DueDate()
+            {
+                return InvoiceDate.AddDays(30).ToString("dd/MM/yyyy");
+            }
 
         }
 
@@ -62,6 +76,11 @@ namespace OO_Design
 
             public override string Name { get => BusinessName; }
             public override string Address { get => BusinessAddress; }
+
+            public override string DueDate()
+            {
+                return InvoiceDate.AddDays(60).ToString("dd/MM/yyyy");
+            }
         }
     }
 }

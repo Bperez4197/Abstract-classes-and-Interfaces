@@ -1,0 +1,7 @@
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\bin\Debug\AbstractAndInterfaces.exe.config
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\bin\Debug\AbstractAndInterfaces.exe
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\bin\Debug\AbstractAndInterfaces.pdb
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\obj\Debug\AbstractAndInterfaces.csproj.AssemblyReference.cache
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\obj\Debug\AbstractAndInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\obj\Debug\AbstractAndInterfaces.exe
+C:\Users\bryce\OneDrive\C#\C# 2 class\Abstract Classes & Interfaces\AbstractAndInterfaces\AbstractAndInterfaces\obj\Debug\AbstractAndInterfaces.pdb
