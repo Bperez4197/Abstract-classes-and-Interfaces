@@ -31,6 +31,9 @@ namespace AbstractAndInterfaces
             Console.WriteLine($"Name:{myAccount.Name} AmountDue: ${myAccount.AmountDue} Due: {myAccount.DueDate()}");
             Console.WriteLine($"Name:{myBiz.Name} AmountDue: ${myBiz.AmountDue} Due: {myBiz.DueDate()}");
             Console.ReadKey();
+
+            myAccount.Pay();
+            myBiz.Pay();
         }
 
 
